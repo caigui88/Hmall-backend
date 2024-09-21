@@ -84,7 +84,7 @@ public class ItemController {
     @ApiOperation("批量扣减库存")
     @PutMapping("/stock/deduct")
     public void deductStock(@RequestBody List<OrderDetailDTO> items){
-        log.info("");
+        log.info("扣减库存接口被调用");
         itemService.deductStock(items);
     }
 }

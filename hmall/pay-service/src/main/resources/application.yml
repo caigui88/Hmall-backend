@@ -1,5 +1,5 @@
 server:
-  port: 8886
+  port: 8086
 spring:
   application:
     name: pay-service
@@ -32,8 +32,8 @@ logging:
 knife4j:
   enable: true
   openapi:
-    title: 黑马商城支付微服务接口文档
-    description: "黑马商城支付微服务接口文档"
+    title: 黑马商城支付服务接口文档
+    description: "支付服务接口文档"
     email: zhanghuyi@itcast.cn
     concat: 虎哥
     url: https://www.itcast.cn
@@ -44,5 +44,3 @@ knife4j:
         api-rule: package
         api-rule-resources:
           - com.hmall.pay.controller
-
-

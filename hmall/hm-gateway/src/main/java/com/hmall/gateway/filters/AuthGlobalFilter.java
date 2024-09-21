@@ -37,6 +37,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
         System.out.println("进行登陆拦截检测");
         if(isExclude(request.getPath().toString())){
             //放行
+            System.out.println("登陆操作，可以直接放行");
             return chain.filter(exchange);
         }
 
